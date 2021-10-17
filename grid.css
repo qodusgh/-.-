@@ -1,0 +1,19 @@
+.grid{
+  border: 3px gray solid;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+.grid item{
+  border: 1px blue solid;
+}
+@media(max-width:800px) {
+  .grid {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid item {
+  	flex-basis: 150px;
+  	flex-shrink: 1;
+}
